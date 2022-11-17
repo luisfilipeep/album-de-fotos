@@ -1,0 +1,144 @@
+*{padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+}
+
+nav {
+    margin: 0%;
+    top: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.vintage {
+    width: 100%;
+    text-align: center;
+    padding: 200px 0px;
+    float: left;
+    background-image: url(/img/fundo.jpg);
+}
+
+.subtitle,.title {
+    transform: matrix(1,-0.20, 0,1,0,0);
+    -ms-transform: matrix(1,-o.20,0,1,0,0);
+    -webkit-transform: matrix(1,-0.20,0,1,0,0);
+}
+
+.subtitle {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-transform: uppercase;
+font-size: 70px;
+text-shadow: 4px 5px #ebebdc, 6px 7px #00dae0;
+color: #001b48;
+}
+
+.subtitle span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.subtitle span b {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    background: #cfcfc2;
+    padding: 0px 20px;
+
+}
+
+.subtitle span.icon {
+    font-size: 28px;
+}
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.title::before,.title::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 5px;
+    border-top: 1px solid #27dde0;
+    border-bottom: #121212;
+
+}
+
+.title::before {
+    margin:10px 0 0 -110px;
+
+}
+
+.title::after {
+    margin: 10px 0 0 10px;
+}
+
+.album {
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 2vw;
+}
+
+.foto-album img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.foto-album {
+    width: 340px;
+    height: 340px;
+    border: 0px solid #000;
+    box-shadow: 1px 2px 5px #000;
+    transition: transform 0.3s;
+    cursor: url(img/cursor.cur) , default;
+}
+
+.foto-album:hover {
+    transform: scale(1.1);
+}
+
+footer {color: #fff;
+text-align: center;
+font-size: 25px;
+}
+
+.btn {
+top: 0;
+left: 0;
+transition:all 0.15s linear 0s;
+display: block;
+margin:auto ;
+width: 150px;
+background-color: #cfcfc2;
+color: #001b48;
+letter-spacing: 1px;
+box-shadow: -6px 6px 0 #00dae0;
+text-decoration: none;
+}
+
+.btn:hover {
+    top: 3px;
+    left: -3px;
+    box-shadow: -3px 3px 0 #121212;
+}
